@@ -1,0 +1,460 @@
+{
+    "questions":[
+        {
+            "question":"What Resource Group primarily does ? ",
+            "options":[
+                {
+                    "A":"Physical grouping of resources"
+                },
+                {
+                    "B":"Logical grouping of resources"
+                },
+                {
+                    "C":"Avoids the clutter in azure portal"
+                },
+                {
+                    "D":"All of the above"
+                }
+            ],
+            "answer":"B",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which of the following statements are true for Azure cloud ? ",
+            "options":[
+                {
+                    "A":"It is a Microsoft cloud platform "
+                },
+                {
+                    "B":"It provides SAAS , IAAS and PAAS "
+                },
+                {
+                    "C":"It is a public cloud"
+                },
+                {
+                    "D":"All of the above"
+                }
+            ],
+            "answer":"D",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which is not a region available as a Azure region ? ",
+            "options":[
+                {
+                    "A":"Central India"
+                },
+                {
+                    "B":"South Africa North"
+                },
+                {
+                    "C":"West India"
+                },
+                {
+                    "D":"North India"
+                }
+            ],
+            "answer":"D",
+            "isTieBreaker":false
+        },
+        {
+            "question":"What is the primary purpose of Azure Functions ?",
+            "options":[
+                {
+                    "A":"Data warehousing"
+                },
+                {
+                    "B":"Automated resource management"
+                },
+                {
+                    "C":"Serverless computing"
+                },
+                {
+                    "D":"Network optimization"
+                }
+            ],
+            "answer":"C",
+            "isTieBreaker":false
+        },
+        {
+            "question":"What is the purpose of Azure Key Vault ?",
+            "options":[
+                {
+                    "A":"Securely store and manage sensitive information such as secrets and keys"
+                },
+                {
+                    "B":"Monitor and analyze performance metrics of Azure resources"
+                },
+                {
+                    "C":"Host web applications and APIs in a scalable and reliable manner"
+                },
+                {
+                    "D":"Provide identity and access management for Azure AD"
+                }
+            ],
+            "answer":"A",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which of the following is Not a type of storage offered by Azure Storage Accounts ?",
+            "options":[
+                {
+                    "A":"Blob Storage"
+                },
+                {
+                    "B":"Queue Storage"
+                },
+                {
+                    "C":"File Storage"
+                },
+                {
+                    "D":"Document Storage"
+                }
+            ],
+            "answer":"D",
+            "isTieBreaker":false
+        },
+        {
+            "question":"What is a limitation of the Azure Functions Consumption Plan ?",
+            "options":[
+                {
+                    "A":"It cannot run Docker containers"
+                },
+                {
+                    "B":"It only supports C# and JavaScript"
+                },
+                {
+                    "C":"Since it is a function app hosted in consumption plan , it cannot be subscribed by event consumers"
+                },
+                {
+                    "D":"It does not support VNET integration"
+                }
+            ],
+            "answer":"D",
+            "isTieBreaker":false
+        },
+        {
+            "question":"How does Azure Functions pricing model primarily work ?",
+            "options":[
+                {
+                    "A":"Based on the number of VMs used"
+                },
+                {
+                    "B":"Based on the amount of storage used"
+                },
+                {
+                    "C":"Based on the number of executions and execution time"
+                },
+                {
+                    "D":"A flat monthly fee"
+                }
+            ],
+            "answer":"C",
+            "isTieBreaker":false
+        },
+        {
+            "question":"What is the hightest scope at which you can assign an RBAC role in Azure ?",
+            "options":[
+                {
+                    "A":"Subscription"
+                },
+                {
+                    "B":"Resource Group"
+                },
+                {
+                    "C":"Individual Resource"
+                },
+                {
+                    "D":"Management Group"
+                }
+            ],
+            "answer":"D",
+            "isTieBreaker":false
+        },
+        {
+            "question":"What is the primary function of Role-Based Access Control in Azure ?",
+            "options":[
+                {
+                    "A":"Billing management"
+                },
+                {
+                    "B":"Providing VPN access"
+                },
+                {
+                    "C":"Managing user access to resources"
+                },
+                {
+                    "D":"Data encryption"
+                }
+            ],
+            "answer":"C",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which Azure Storage redundancy option provides the highest level of data durability across multiple regions ?",
+            "options":[
+                {
+                    "A":"Locally-redundant storage (LRS)"
+                },
+                {
+                    "B":"Zone-redundant storage (ZRS)"
+                },
+                {
+                    "C":"Geo-redundant storage (GRS)"
+                },
+                {
+                    "D":"Read-access geo-redundant storage (RA-GRS)"
+                }
+            ],
+            "answer":"C",
+            "isTieBreaker":false
+        },
+        {
+            "question":"In Azure Functions, what triggers a function to run ?",
+            "options":[
+                {
+                    "A":"A specific time interval"
+                },
+                {
+                    "B":"Manual invocation"
+                },
+                {
+                    "C":"An event in another service"
+                },
+                {
+                    "D":"All of the above"
+                }
+            ],
+            "answer":"D",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which protocol is NOT supported by Azure AD B2C for authentication ?",
+            "options":[
+                {
+                    "A":"OAuth 2.0"
+                },
+                {
+                    "B":"SAML"
+                },
+                {
+                    "C":"OpenID Connect"
+                },
+                {
+                    "D":"FTP"
+                }
+            ],
+            "answer":"D",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which of the following are the networking strategies to connect to the Azure Storage Account ?",
+            "options":[
+                {
+                    "A":"Public endpoint"
+                },
+                {
+                    "B":"Service endpoint on vnet and firewall on vnets"
+                },
+                {
+                    "C":"Private Endpoints"
+                },
+                {
+                    "D":"All of the above"
+                }
+            ],
+            "answer":"D",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which of the following are the most recommended secured networking strategies to connect to the Azure Storage Account ?",
+            "options":[
+                {
+                    "A":"Service endpoint on vnet and firewall on vnets"
+                },
+                {
+                    "B":"Private endpoint"
+                },
+                {
+                    "C":"Both A & B"
+                },
+                {
+                    "D":"None of the above"
+                }
+            ],
+            "answer":"B",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which feature in Azure Blob Storage provides encryption at rest ?",
+            "options":[
+                {
+                    "A":"Storage Service Encryption (SSE)"
+                },
+                {
+                    "B":"Advanced Threat Protection (ATP)"
+                },
+                {
+                    "C":"Role-Based Access Control (RBAC)"
+                },
+                {
+                    "D":"Azure Information Protection (AIP)"
+                }
+            ],
+            "answer":"A",
+            "isTieBreaker":false
+        },
+        {
+            "question":"In Azure AD B2C custom policies, which policy key is used to integrate with external identity providers ?",
+            "options":[
+                {
+                    "A":"ClaimsExchange"
+                },
+                {
+                    "B":"UserJourneyBehaviors"
+                },
+                {
+                    "C":"RelyingParty"
+                },
+                {
+                    "D":"ClaimsSchema"
+                }
+            ],
+            "answer":"A",
+            "isTieBreaker":false
+        },
+        {
+            "question":"How does Azure Data Lake Storage Gen2 enhance Azure Blob Storage ?",
+            "options":[
+                {
+                    "A":"By providing blockchain storage solutions"
+                },
+                {
+                    "B":"By offering a hierarchical namespace for big data analytics"
+                },
+                {
+                    "C":"By enabling GPU-accelerated computing"
+                },
+                {
+                    "D":"By supporting exclusive virtual network deployments"
+                }
+            ],
+            "answer":"B",
+            "isTieBreaker":false
+        },
+        {
+            "question":"What is a unique feature of Azure Durable Functions compared to standard Azure Functions ?",
+            "options":[
+                {
+                    "A":"Stateful orchestration of function executions"
+                },
+                {
+                    "B":"Higher memory capacity"
+                },
+                {
+                    "C":"Automatic scaling based on CPU usage"
+                },
+                {
+                    "D":"Integrated Visual Studio support"
+                }
+            ],
+            "answer":"A",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which of the following statements about AAD B2C are true ?",
+            "options":[
+                {
+                    "A":"Guest users can only sign in to single tenant B2C"
+                },
+                {
+                    "B":"Consumers can sign in from common endpoint in multi-tenant Azure AD "
+                },
+                {
+                    "C":"Both A and B"
+                },
+                {
+                    "D":"None of the above"
+                }
+            ],
+            "answer":"C",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which of the following things we can accomplish with Microsoft Graph ?",
+            "options":[
+                {
+                    "A":"User Migration"
+                },
+                {
+                    "B":"Calculate the intersection points in user's addresses"
+                },
+                {
+                    "C":"Both A and B"
+                },
+                {
+                    "D":"None of the above"
+                }
+            ],
+            "answer":"A",
+            "isTieBreaker":false
+        },
+        {
+            "question":"What Azure Devops doesn't primarily offer ?",
+            "options":[
+                {
+                    "A":"A set of tools for building and deploying applications"
+                },
+                {
+                    "B":"A set of tools for testing applications"
+                },
+                {
+                    "C":"Virtual Machines administration for self hosted agents"
+                },
+                {
+                    "D":"None of the above"
+                }
+            ],
+            "answer":"C",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which Azure service is used for real-time analytics on streaming data and can process millions of events per second ?",
+            "options":[
+                {
+                    "A":"Azure Machine learning"
+                },
+                {
+                    "B":"Azure Event Hubs"
+                },
+                {
+                    "C":"Azure Databricks"
+                },
+                {
+                    "D":"Azure Data Lake Analytics"
+                }
+            ],
+            "answer":"B",
+            "isTieBreaker":false
+        },
+        {
+            "question":"Which of the following azure service uses the TCP connection to connect to the client ?",
+            "options":[
+                {
+                    "A":"Table storage"
+                },
+                {
+                    "B":"Blob storage"
+                },
+                {
+                    "C":"Redis cache"
+                },
+                {
+                    "D":"All of the above"
+                }
+            ],
+            "answer":"C",
+            "isTieBreaker":false
+        }
+    ]
+}

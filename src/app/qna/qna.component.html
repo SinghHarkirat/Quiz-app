@@ -1,0 +1,73 @@
+<h1 class="text-success text-center">Azure Quiz</h1>
+<div class="container">
+    <div *ngFor="let ques of questions;let i=index" class="questionsDiv d-none">
+        <div class="card mt-5 pt-3" *ngIf="!ques.isAttempted && !ques.tieBreaker">
+            <div class="card-head p-3"><h3>Q{{i+1}} {{ques.question}}</h3></div>
+            <div class="card-body row options">
+                <div class="col-md-6"> A <input type="radio" name="selection{{i+1}}" value="A" [(ngModel)]="selectedOptions[i]"/>  {{ques.options[0].A}}</div>
+                <div class="col-md-6"> B <input type="radio" name="selection{{i+1}}" value="B" [(ngModel)]="selectedOptions[i]"/>  {{ques.options[1].B}}</div>
+                <div class="col-md-6"> C <input type="radio" name="selection{{i+1}}" value="C" [(ngModel)]="selectedOptions[i]"/>  {{ques.options[2].C}}</div>
+                <div class="col-md-6"> D <input type="radio" name="selection{{i+1}}" value="D" [(ngModel)]="selectedOptions[i]"/>  {{ques.options[3].D}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 p-3">
+                    <button class="btn btn-primary" (click)="findAnswer(i)" [disabled]="!isOptionSelected(i)">Reveal answer</button>
+                </div>
+              
+            </div>
+         
+        </div>
+       
+    </div>
+
+    <p id="crafted" class="mt-2">Crafted with <i class="fa fa-heart" style="font-size:18px;color:red"></i>  by Harkirat Singh</p>
+</div>
+<div id="scoreDiv" class="card" >
+    <h3 class="card-head text-center">Scoreboard</h3>
+    <div class="card-body">
+        <h4 class="text text-muted">Team A: {{scoreA}}</h4>
+        <h4 class="text text-muted">Team B: {{scoreB}}</h4>
+    </div>
+   
+</div>
+<div id="resultDiv" [ngClass]="{'d-none':!isLastQuestion,'':isLastQuestion}">
+   
+    <div id="winnerDiv" class="d-none">
+        <p class="slide-right" *ngIf="!isTie">Winner is <span>{{winner}} 🎉 </span></p>
+        <p *ngIf="isTie">Its a tie</p>
+    </div>
+
+    <!-- <div class="container" *ngIf="isTie">
+        <h2 class="text-center text-danger">Tie breaker round</h2>
+        <div id="tieDiv" class="card border-danger mt-5 pt-3">
+            <form [formGroup]="myForm">
+                <div class="card-head p-3"><h3>Q {{tieQues.question}}</h3></div>
+                <div class="card-body row">
+                    <div class="col-md-6">A  <input type="radio" value="A" formControlName="tieBreakerOption"/>  {{tieQues.options[0].A}}</div>
+                    <div class="col-md-6">B  <input type="radio" value="B" formControlName="tieBreakerOption"/>  {{tieQues.options[1].B}}</div>
+                    <div class="col-md-6">C  <input type="radio" value="C" formControlName="tieBreakerOption"/>  {{tieQues.options[2].C}}</div>
+                    <div class="col-md-6">D  <input type="radio" value="D" formControlName="tieBreakerOption"/>  {{tieQues.options[3].D}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 p-3">
+                        Attempted by Team : 
+                        <select class="form-control" formControlName="selectedTeam" >
+                            <option value="" selected>Choose</option>
+                            <option>A</option>
+                            <option>B</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 p-3">
+                        <button class="btn btn-primary" (click)="tieBreakerResult()" [disabled]="myForm.invalid">Reveal answer</button>
+                    </div>
+                
+                </div>
+            </form>
+        </div>
+    </div> -->
+    
+   
+</div>
+

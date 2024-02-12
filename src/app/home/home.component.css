@@ -1,0 +1,19 @@
+
+.crafted-div{
+   position:fixed;
+   top:100px;
+   left:700px;
+   z-index:-999;
+  
+
+}
+
+.crafted{
+    position:fixed;
+    bottom:10px;
+    left:40%;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1.2vw;
+    color: rgba(10, 0, 15, 0.48);
+}
+

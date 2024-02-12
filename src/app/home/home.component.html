@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <h1 class="text-success text-center">Azure Quiz</h1>
+  <div class="row">
+    <div class="col-md-6 border border-2 mt-4 bg-warning">
+      <h3 class="text text-danger pt-2">Team A</h3>
+      
+      <p *ngFor="let person of teamA" [@openClose]="isOpen ? 'open' : 'closed'">{{person}}</p>
+     
+    </div>
+    <div class="col-md-6 border border-2 mt-4 bg-danger">
+      <h3 class="text text-black pt-2">Team B</h3>
+      <p *ngFor="let person of teamB" [@openClose]="isOpen ? 'open' : 'closed'" class="text text-white">{{person}}</p>
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="col-md-5 offset-5">
+      <button (click)="toggle()" class="mt-4 btn btn-primary" *ngIf="!isOpen">View teams</button>
+    </div>
+  </div>
+  <div class="d-flex flex-column align-items-center justify-content-center crafted-div" style="height:768px;">
+    
+    <p class="mt-2 crafted">Crafted with <i class="fa fa-heart" style="font-size:18px;color:red"></i>  by Harkirat Singh</p>
+    <button (click)="startPlay()" *ngIf="isOpen" class="goBtn btn btn-dark">Let's go</button>
+  </div>
+</div>
+
